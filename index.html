@@ -1,70 +1,96 @@
 <!doctype html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Martí Rella</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-				<style type="text/css" media="screen">
-            * { padding: 0; margin: 0; }
-						body {
-              font-family: 'Trebuchet MS', Helvetica, sans-serif;
-							background-color: #f0f0f0;
-              display: table;
-              position: absolute;
-              height: 100%;
-              width: 100%;
-              font-size: 1.4rem;
-						}
-            .jumbotron {
-               display: table-cell;
-               vertical-align: middle;
-            }
-            #container {
-                text-align: center;
-            }
 
-            p {
-                padding: 1em;
-            }
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Martí Rella</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css" media="screen">
+        * {
+            padding: 0;
+            margin: 0;
+        }
 
-            ul {
-              margin-top: 2em;
-                display: inline-block
-            }
+        body {
+            font-family: 'Trebuchet MS', Helvetica, sans-serif;
+            background-color: #f0f0f0;
+            font-size: 1.4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-wrap: nowrap;
+        }
+
+
+        .content {
+            text-align: center;
+            display: flex;
+            flex: 1 0 auto;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        p {
+            padding: 1em;
+        }
+
+        ul {
+            margin-top: 3em;
+            display: inline-block;
+            margin: 0;
+        }
+
+        li {
+            list-style: none;
+            float: left;
+            padding: 1em;
+        }
+
+        a,
+        a:visited {
+            color: #b91582;
+            letter-spacing: 0.1em;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #000000;
+        }
+
+
+        @media only screen and (max-width: 480px) {
             li {
-                list-style: none;
-                float: left;
-                margin: 0 1em;
-                padding: 1em;
+                width: 100%;
+                margin: 0;
+                padding: 1em 0;
             }
+        }
+    </style>
+</head>
 
-            a, a:visited{
-              color: #b91582;
-              letter-spacing: 0.1em;
-              text-decoration: none;
-            }
-            a:hover {
-              text-decoration: underline;
-              color: #000000;
-            }
+<body>
+    <div class="content">
+        <h1>Martí Rella</h1>
+        <p>I'm a backend engineer at <a href="https://verse.me">Verse</a>.</p>
+        <div>
+            <ul>
+                <li><a href="https://medium.com/@martirella">blog</a></li>
+                <li><a href="https://github.com/martirella">github</a></li>
+                <li><a href="https://twitter.com/martirella">twitter</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
 
-				</style>
-    </head>
-    <body>
-          <div class="jumbotron">
-              <div id="container">
-                  <h1>Martí Rella</h1>
-                  <p>I'm a backend developer at <a href="http://21buttons.com">21Buttons</a>.</p>
-          				<div>
-          					  <ul>
-          							<li><a href="https://medium.com/@martirella">blog</a></li>
-          							<li><a href="https://github.com/martirella">github</a></li>
-          							<li><a href="https://twitter.com/martirella">twitter</a></li>
-          						</ul>
-                </div>
-            </div>
-				</div>
-    </body>
 </html>
